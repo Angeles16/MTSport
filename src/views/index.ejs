@@ -1,0 +1,27 @@
+<%- include ('partials/_header'); %>
+
+ 
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body">
+                    <h3>servicios mecanicos</h3>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <form action="/service" method="POST" class="form-">
+                                <div class="form-group">
+                                    <p>SERVICIO <input type="text" name="servicios" class="form-control"></p>
+                                    <P>COSTO <input type="text" name="costo" class="form-control"></p>
+                                    <p>DEDUCIBLE <input type="text" name="deducible" class="form-control"></p>
+                                    <p>DETALLE <br><textarea name="detalle" cols="30" rows="10" class="form-control"></textarea></p>
+                                </div>
+                                <button class="form-control btn-success"> Guardat Servicio </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include ('partials/_footer.ejs'); %>
